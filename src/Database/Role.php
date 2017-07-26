@@ -3,6 +3,7 @@
 namespace Dubroquin\Bouncer\Database;
 
 use Illuminate\Database\Eloquent\Model;
+use Pegasus\NotificationType;
 
 class Role extends Model
 {
