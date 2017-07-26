@@ -1,6 +1,6 @@
 <?php
 
-use Silber\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Database\Models;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;

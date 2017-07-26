@@ -1,10 +1,10 @@
 <?php
 
-namespace Silber\Bouncer\Conductors;
+namespace Dubroquin\Bouncer\Conductors;
 
-use Silber\Bouncer\Helpers;
+use Dubroquin\Bouncer\Helpers;
 use Illuminate\Support\Collection;
-use Silber\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Database\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class AssignsRoles
@@ -19,7 +19,7 @@ class AssignsRoles
     /**
      * Constructor.
      *
-     * @param \Silber\Bouncer\Database\Role|string|array  $role
+     * @param \Dubroquin\Bouncer\Database\Role|string|array  $role
      */
     public function __construct($roles)
     {

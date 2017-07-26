@@ -1,11 +1,11 @@
 <?php
 
-namespace Silber\Bouncer\Database\Concerns;
+namespace Dubroquin\Bouncer\Database\Concerns;
 
 use App\User;
-use Silber\Bouncer\Database\Role;
-use Silber\Bouncer\Database\Models;
-use Silber\Bouncer\Database\Queries\AbilitiesForModel;
+use Dubroquin\Bouncer\Database\Role;
+use Dubroquin\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Database\Queries\AbilitiesForModel;
 
 trait IsAbility
 {

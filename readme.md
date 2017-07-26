@@ -56,7 +56,7 @@ When you check abilities at the gate, the bouncer will be consulted first. If he
 Simply install the bouncer package with [composer](https://getcomposer.org/doc/00-intro.md):
 
 ```
-$ composer require silber/bouncer v1.0.0-beta.2
+$ composer require Dubroquin/bouncer v1.0.0-beta.4
 ```
 
 Once the composer installation completes, you can add the service provider and alias the facade. Open `config/app.php`, and make the following changes:
@@ -64,13 +64,13 @@ Once the composer installation completes, you can add the service provider and a
 1) Add a new item to the `providers` array:
 
 ```php
-Silber\Bouncer\BouncerServiceProvider::class,
+Dubroquin\Bouncer\BouncerServiceProvider::class,
 ```
 
 2) Add a new item to the `aliases` array:
 
 ```php
-'Bouncer' => Silber\Bouncer\BouncerFacade::class,
+'Bouncer' => Dubroquin\Bouncer\BouncerFacade::class,
 ```
 
 This part is optional. If you don't want to use the facade, you can skip step 2.
@@ -78,7 +78,7 @@ This part is optional. If you don't want to use the facade, you can skip step 2.
 3) Add the bouncer's trait to your user model:
 
 ```php
-use Silber\Bouncer\Database\HasRolesAndAbilities;
+use Dubroquin\Bouncer\Database\HasRolesAndAbilities;
 
 class User extends Model
 {
@@ -126,7 +126,7 @@ The table structure in Bouncer 1.0 has changed significantly. To upgrade, you'll
 If your app has not made it to production yet and you can still rollback your migrations, do that. Once you've rolled back all migrations, you can delete the Bouncer migration file and republish it to get the newer version:
 
 ```
-php artisan vendor:publish --provider="Silber\Bouncer\BouncerServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Dubroquin\Bouncer\BouncerServiceProvider" --tag="migrations"
 ```
 
 For apps that are in production and already have real data in the database, Bouncer ships with an upgrade migration file which will migrate your schema *and your data* to the new structure.
@@ -155,7 +155,7 @@ This will create the migration file, but will not actually migrate the database.
 
 Adding roles and abilities to users is made extremely easy. You do not have to create a role or an ability in advance. Simply pass the name of the role/ability, and Bouncer will create it if it doesn't exist.
 
-> **Note:** the examples below all use the `Bouncer` facade. If you don't like facades, you can instead inject an instance of `Silber\Bouncer\Bouncer` into your class.
+> **Note:** the examples below all use the `Bouncer` facade. If you don't like facades, you can instead inject an instance of `Dubroquin\Bouncer\Bouncer` into your class.
 
 ### Creating roles and abilities
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Silber\Bouncer;
+namespace Dubroquin\Bouncer;
 
 use RuntimeException;
 use Illuminate\Cache\NullStore;
@@ -10,24 +10,24 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\Access\Gate;
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
 
-use Silber\Bouncer\Seed\Seeder;
-use Silber\Bouncer\Database\Models;
-use Silber\Bouncer\Conductors\ChecksRoles;
-use Silber\Bouncer\Conductors\AssignsRoles;
-use Silber\Bouncer\Conductors\RemovesRoles;
-use Silber\Bouncer\Conductors\GivesAbilities;
-use Silber\Bouncer\Conductors\RemovesAbilities;
-use Silber\Bouncer\Conductors\ForbidsAbilities;
-use Silber\Bouncer\Conductors\UnforbidsAbilities;
-use Silber\Bouncer\Contracts\Clipboard as ClipboardContract;
-use Silber\Bouncer\Contracts\CachedClipboard as CachedClipboardContract;
+use Dubroquin\Bouncer\Seed\Seeder;
+use Dubroquin\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Conductors\ChecksRoles;
+use Dubroquin\Bouncer\Conductors\AssignsRoles;
+use Dubroquin\Bouncer\Conductors\RemovesRoles;
+use Dubroquin\Bouncer\Conductors\GivesAbilities;
+use Dubroquin\Bouncer\Conductors\RemovesAbilities;
+use Dubroquin\Bouncer\Conductors\ForbidsAbilities;
+use Dubroquin\Bouncer\Conductors\UnforbidsAbilities;
+use Dubroquin\Bouncer\Contracts\Clipboard as ClipboardContract;
+use Dubroquin\Bouncer\Contracts\CachedClipboard as CachedClipboardContract;
 
 class Bouncer
 {
     /**
      * The bouncer clipboard instance.
      *
-     * @var \Silber\Bouncer\Contracts\Clipboard
+     * @var \Dubroquin\Bouncer\Contracts\Clipboard
      */
     protected $clipboard;
 
@@ -41,7 +41,7 @@ class Bouncer
     /**
      * Constructor.
      *
-     * @param \Silber\Bouncer\Contracts\Clipboard  $clipboard
+     * @param \Dubroquin\Bouncer\Contracts\Clipboard  $clipboard
      */
     public function __construct(ClipboardContract $clipboard)
     {
@@ -63,7 +63,7 @@ class Bouncer
      * Create a bouncer factory instance.
      *
      * @param  \Illuminate\Database\Eloquent\Model|null  $user
-     * @return \Silber\Bouncer\Factory.
+     * @return \Dubroquin\Bouncer\Factory.
      */
     public static function make(Model $user = null)
     {
@@ -99,7 +99,7 @@ class Bouncer
      * Start a chain, to allow the given authority an ability.
      *
      * @param  \Illuminate\Database\Eloquent\Model|string  $authority
-     * @return \Silber\Bouncer\Conductors\GivesAbilities
+     * @return \Dubroquin\Bouncer\Conductors\GivesAbilities
      */
     public function allow($authority)
     {
@@ -110,7 +110,7 @@ class Bouncer
      * Start a chain, to disallow the given authority an ability.
      *
      * @param  \Illuminate\Database\Eloquent\Model|string  $authority
-     * @return \Silber\Bouncer\Conductors\RemovesAbilities
+     * @return \Dubroquin\Bouncer\Conductors\RemovesAbilities
      */
     public function disallow($authority)
     {
@@ -121,7 +121,7 @@ class Bouncer
      * Start a chain, to forbid the given authority an ability.
      *
      * @param  \Illuminate\Database\Eloquent\Model|string  $authority
-     * @return \Silber\Bouncer\Conductors\GivesAbilities
+     * @return \Dubroquin\Bouncer\Conductors\GivesAbilities
      */
     public function forbid($authority)
     {
@@ -132,7 +132,7 @@ class Bouncer
      * Start a chain, to unforbid the given authority an ability.
      *
      * @param  \Illuminate\Database\Eloquent\Model|string  $authority
-     * @return \Silber\Bouncer\Conductors\RemovesAbilities
+     * @return \Dubroquin\Bouncer\Conductors\RemovesAbilities
      */
     public function unforbid($authority)
     {
@@ -142,8 +142,8 @@ class Bouncer
     /**
      * Start a chain, to assign the given role to a model.
      *
-     * @param  \Silber\Bouncer\Database\Role|string  $role
-     * @return \Silber\Bouncer\Conductors\AssignsRoles
+     * @param  \Dubroquin\Bouncer\Database\Role|string  $role
+     * @return \Dubroquin\Bouncer\Conductors\AssignsRoles
      */
     public function assign($role)
     {
@@ -153,8 +153,8 @@ class Bouncer
     /**
      * Start a chain, to retract the given role from a model.
      *
-     * @param  \Silber\Bouncer\Database\Role|string  $role
-     * @return \Silber\Bouncer\Conductors\RemovesRoles
+     * @param  \Dubroquin\Bouncer\Database\Role|string  $role
+     * @return \Dubroquin\Bouncer\Conductors\RemovesRoles
      */
     public function retract($role)
     {
@@ -165,7 +165,7 @@ class Bouncer
      * Start a chain, to check if the given authority has a certain role.
      *
      * @param  \Illuminate\Database\Eloquent\Model  $authority
-     * @return \Silber\Bouncer\Conductors\ChecksRoles
+     * @return \Dubroquin\Bouncer\Conductors\ChecksRoles
      */
     public function is(Model $authority)
     {
@@ -320,7 +320,7 @@ class Bouncer
      * Get an instance of the role model.
      *
      * @param  array  $attributes
-     * @return \Silber\Bouncer\Database\Role
+     * @return \Dubroquin\Bouncer\Database\Role
      */
     public function role(array $attributes = [])
     {
@@ -331,7 +331,7 @@ class Bouncer
      * Get an instance of the ability model.
      *
      * @param  array  $attributes
-     * @return \Silber\Bouncer\Database\Ability
+     * @return \Dubroquin\Bouncer\Database\Ability
      */
     public function ability(array $attributes = [])
     {

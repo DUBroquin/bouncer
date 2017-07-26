@@ -1,6 +1,6 @@
 <?php
 
-namespace Silber\Bouncer\Seed;
+namespace Dubroquin\Bouncer\Seed;
 
 use Illuminate\Console\Command;
 
@@ -23,14 +23,14 @@ class SeedCommand extends Command
     /**
      * The bouncer seeder instance.
      *
-     * @var \Silber\Bouncer\Seeder
+     * @var \Dubroquin\Bouncer\Seeder
      */
     protected $seeder;
 
     /**
      * Constructor.
      *
-     * @param \Silber\Bouncer\Seed\Seeder  $seeder
+     * @param \Dubroquin\Bouncer\Seed\Seeder  $seeder
      */
     public function __construct(Seeder $seeder)
     {

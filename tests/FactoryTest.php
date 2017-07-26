@@ -1,6 +1,6 @@
 <?php
 
-use Silber\Bouncer\Bouncer;
+use Dubroquin\Bouncer\Bouncer;
 use Illuminate\Auth\Access\Gate;
 use Illuminate\Container\Container;
 

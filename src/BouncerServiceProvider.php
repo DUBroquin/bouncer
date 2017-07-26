@@ -1,11 +1,11 @@
 <?php
 
-namespace Silber\Bouncer;
+namespace Dubroquin\Bouncer;
 
-use Silber\Bouncer\Seed\Seeder;
-use Silber\Bouncer\UpgradeCommand;
-use Silber\Bouncer\Database\Models;
-use Silber\Bouncer\Seed\SeedCommand;
+use Dubroquin\Bouncer\Seed\Seeder;
+use Dubroquin\Bouncer\UpgradeCommand;
+use Dubroquin\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Seed\SeedCommand;
 
 use Illuminate\Cache\ArrayStore;
 use Illuminate\Support\ServiceProvider;
@@ -112,8 +112,8 @@ class BouncerServiceProvider extends ServiceProvider
     protected function registerMorphs()
     {
         Relation::morphMap([
-            \Silber\Bouncer\Database\Role::class,
-            \Silber\Bouncer\Database\Ability::class,
+            \Dubroquin\Bouncer\Database\Role::class,
+            \Dubroquin\Bouncer\Database\Ability::class,
         ]);
     }
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Silber\Bouncer;
+namespace Dubroquin\Bouncer;
 
-use Silber\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Database\Models;
 
 use App\User;
 use Illuminate\Support\Collection;

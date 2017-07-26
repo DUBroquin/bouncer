@@ -4,7 +4,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-use Silber\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Database\Models;
 
 class UpgradeToBouncer1Dot0 extends Migration
 {

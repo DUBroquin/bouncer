@@ -1,6 +1,6 @@
 <?php
 
-use Silber\Bouncer\CachedClipboard;
+use Dubroquin\Bouncer\CachedClipboard;
 
 use Mockery as m;
 use Illuminate\Cache\ArrayStore;

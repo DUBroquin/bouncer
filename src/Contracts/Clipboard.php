@@ -1,6 +1,6 @@
 <?php
 
-namespace Silber\Bouncer\Contracts;
+namespace Dubroquin\Bouncer\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\Access\Gate;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Silber\Bouncer;
+namespace Dubroquin\Bouncer;
 
-use Silber\Bouncer\Database\Models;
-use Silber\Bouncer\Contracts\CachedClipboard as CachedClipboardContract;
+use Dubroquin\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Contracts\CachedClipboard as CachedClipboardContract;
 
 use Illuminate\Cache\TaggedCache;
 use Illuminate\Contracts\Cache\Store;
@@ -17,7 +17,7 @@ class CachedClipboard extends Clipboard implements CachedClipboardContract
      *
      * @var string
      */
-    protected $tag = 'silber-bouncer';
+    protected $tag = 'Dubroquin-bouncer';
 
     /**
      * The cache store.

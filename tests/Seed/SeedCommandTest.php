@@ -1,7 +1,7 @@
 <?php
 
-use Silber\Bouncer\Seed\Seeder;
-use Silber\Bouncer\Seed\SeedCommand;
+use Dubroquin\Bouncer\Seed\Seeder;
+use Dubroquin\Bouncer\Seed\SeedCommand;
 
 use Prophecy\Argument;
 use Illuminate\Console\Command;
@@ -52,7 +52,7 @@ class SeedCommandTest extends TestCase
     /**
      * Run the seed command with the given seeder and output objects.
      *
-     * @param  \Silber\Bouncer\Seed\Seeder  $seeder
+     * @param  \Dubroquin\Bouncer\Seed\Seeder  $seeder
      * @param  \Symfony\Component\Console\Output\NullOutput  $output
      * @return mixed
      */

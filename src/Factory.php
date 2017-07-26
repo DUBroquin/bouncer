@@ -1,6 +1,6 @@
 <?php
 
-namespace Silber\Bouncer;
+namespace Dubroquin\Bouncer;
 
 use Illuminate\Auth\Access\Gate;
 use Illuminate\Cache\ArrayStore;
@@ -8,7 +8,7 @@ use Illuminate\Container\Container;
 use Illuminate\Contracts\Cache\Store;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
-use Silber\Bouncer\Contracts\Clipboard as ClipboardContract;
+use Dubroquin\Bouncer\Contracts\Clipboard as ClipboardContract;
 
 class Factory
 {
@@ -22,7 +22,7 @@ class Factory
     /**
      * The clipboard instance to use.
      *
-     * @var \Silber\Bouncer\Contracts\Clipboard
+     * @var \Dubroquin\Bouncer\Contracts\Clipboard
      */
     protected $clipboard;
 
@@ -44,7 +44,7 @@ class Factory
      * Create an instance of Bouncer.
      *
      * @param  \Illuminate\Datbase\Eloquent\Model
-     * @return \Silber\Bouncer\Bouncer
+     * @return \Dubroquin\Bouncer\Bouncer
      */
     public function create(Model $user = null)
     {
@@ -75,7 +75,7 @@ class Factory
     /**
      * Set the instance of the clipboard to use.
      *
-     * @param  \Silber\Bouncer\Contracts\Clipboard  $clipboard
+     * @param  \Dubroquin\Bouncer\Contracts\Clipboard  $clipboard
      * @return $this
      */
     public function withClipboard(ClipboardContract $clipboard)
@@ -114,7 +114,7 @@ class Factory
     /**
      * Get an instance of the clipboard.
      *
-     * @return \Silber\Bouncer\Contracts\Clipboard
+     * @return \Dubroquin\Bouncer\Contracts\Clipboard
      */
     protected function getClipboard()
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Silber\Bouncer\Database\Queries;
+namespace Dubroquin\Bouncer\Database\Queries;
 
-use Silber\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Database\Models;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Eloquent\Model;

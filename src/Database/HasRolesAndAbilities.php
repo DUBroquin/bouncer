@@ -1,9 +1,9 @@
 <?php
 
-namespace Silber\Bouncer\Database;
+namespace Dubroquin\Bouncer\Database;
 
-use Silber\Bouncer\Database\Concerns\HasRoles;
-use Silber\Bouncer\Database\Concerns\HasAbilities;
+use Dubroquin\Bouncer\Database\Concerns\HasRoles;
+use Dubroquin\Bouncer\Database\Concerns\HasAbilities;
 
 trait HasRolesAndAbilities
 {

@@ -1,6 +1,6 @@
 <?php
 
-use Silber\Bouncer\Database\HasRolesAndAbilities;
+use Dubroquin\Bouncer\Database\HasRolesAndAbilities;
 
 class CustomAuthorityTest extends BaseTestCase
 {

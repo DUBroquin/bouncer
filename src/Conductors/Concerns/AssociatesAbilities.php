@@ -1,8 +1,8 @@
 <?php
 
-namespace Silber\Bouncer\Conductors\Concerns;
+namespace Dubroquin\Bouncer\Conductors\Concerns;
 
-use Silber\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Database\Models;
 use Illuminate\Database\Eloquent\Model;
 
 trait AssociatesAbilities

@@ -2,11 +2,11 @@
 
 require __DIR__.'/../migrations/create_bouncer_tables.php';
 
-use Silber\Bouncer\Bouncer;
-use Silber\Bouncer\Seed\Seeder;
-use Silber\Bouncer\CachedClipboard;
-use Silber\Bouncer\Database\Models;
-use Silber\Bouncer\Database\HasRolesAndAbilities;
+use Dubroquin\Bouncer\Bouncer;
+use Dubroquin\Bouncer\Seed\Seeder;
+use Dubroquin\Bouncer\CachedClipboard;
+use Dubroquin\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Database\HasRolesAndAbilities;
 
 use PHPUnit\Framework\TestCase;
 use Illuminate\Auth\Access\Gate;
@@ -27,7 +27,7 @@ abstract class BaseTestCase extends TestCase
     /**
      * The clipboard instance.
      *
-     * @var \Silber\Bouncer\CachedClipboard
+     * @var \Dubroquin\Bouncer\CachedClipboard
      */
     protected $clipboard;
 
@@ -94,7 +94,7 @@ abstract class BaseTestCase extends TestCase
      * Get a bouncer instance.
      *
      * @param  \Illuminate\Database\Eloquent\Model|null  $user
-     * @return \Silber\Bouncer\Bouncer
+     * @return \Dubroquin\Bouncer\Bouncer
      */
     protected function bouncer(Eloquent $authority = null)
     {

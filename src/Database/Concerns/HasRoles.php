@@ -1,15 +1,15 @@
 <?php
 
-namespace Silber\Bouncer\Database\Concerns;
+namespace Dubroquin\Bouncer\Database\Concerns;
 
 use Illuminate\Container\Container;
 
-use Silber\Bouncer\Clipboard;
-use Silber\Bouncer\Database\Role;
-use Silber\Bouncer\Database\Models;
-use Silber\Bouncer\Conductors\AssignsRoles;
-use Silber\Bouncer\Conductors\RemovesRoles;
-use Silber\Bouncer\Database\Queries\Roles as RolesQuery;
+use Dubroquin\Bouncer\Clipboard;
+use Dubroquin\Bouncer\Database\Role;
+use Dubroquin\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Conductors\AssignsRoles;
+use Dubroquin\Bouncer\Conductors\RemovesRoles;
+use Dubroquin\Bouncer\Database\Queries\Roles as RolesQuery;
 
 trait HasRoles
 {
@@ -173,7 +173,7 @@ trait HasRoles
     /**
      * Get an instance of the bouncer's clipboard.
      *
-     * @return \Silber\Bouncer\Clipboard
+     * @return \Dubroquin\Bouncer\Clipboard
      */
     protected function getClipboardInstance()
     {

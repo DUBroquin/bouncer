@@ -1,6 +1,6 @@
 <?php
 
-namespace Silber\Bouncer\Conductors;
+namespace Dubroquin\Bouncer\Conductors;
 
 class UnforbidsAbilities
 {

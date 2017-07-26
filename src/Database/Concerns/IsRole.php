@@ -1,10 +1,10 @@
 <?php
 
-namespace Silber\Bouncer\Database\Concerns;
+namespace Dubroquin\Bouncer\Database\Concerns;
 
-use Silber\Bouncer\Helpers;
-use Silber\Bouncer\Database\Models;
-use Silber\Bouncer\Database\Queries\Roles as RolesQuery;
+use Dubroquin\Bouncer\Helpers;
+use Dubroquin\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Database\Queries\Roles as RolesQuery;
 
 use App\User;
 use Illuminate\Database\Eloquent\Model;

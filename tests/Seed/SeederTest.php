@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Silber\Bouncer\Seed\Seeder;
+use Dubroquin\Bouncer\Seed\Seeder;
 use Illuminate\Container\Container;
 
 class SeederTest extends TestCase
@@ -49,7 +49,7 @@ class SeederTest extends TestCase
     /**
      * Get an instance of the seeder.
      *
-     * @return \Silber\Bouncer\Seed\Seeder
+     * @return \Dubroquin\Bouncer\Seed\Seeder
      */
     protected function seeder()
     {

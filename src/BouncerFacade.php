@@ -1,6 +1,6 @@
 <?php
 
-namespace Silber\Bouncer;
+namespace Dubroquin\Bouncer;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Silber\Bouncer\Database\Concerns;
+namespace Dubroquin\Bouncer\Database\Concerns;
 
-use Silber\Bouncer\Clipboard;
+use Dubroquin\Bouncer\Clipboard;
 use Illuminate\Container\Container;
 
 trait Authorizable
@@ -46,7 +46,7 @@ trait Authorizable
     /**
      * Get an instance of the bouncer's clipboard.
      *
-     * @return \Silber\Bouncer\Clipboard
+     * @return \Dubroquin\Bouncer\Clipboard
      */
     protected function getClipboardInstance()
     {

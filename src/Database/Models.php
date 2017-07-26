@@ -1,6 +1,6 @@
 <?php
 
-namespace Silber\Bouncer\Database;
+namespace Dubroquin\Bouncer\Database;
 
 use Closure;
 use App\User;
@@ -191,7 +191,7 @@ class Models
      * Get an instance of the ability model.
      *
      * @param  array  $attributes
-     * @return \Silber\Bouncer\Database\Ability
+     * @return \Dubroquin\Bouncer\Database\Ability
      */
     public static function ability(array $attributes = [])
     {
@@ -202,7 +202,7 @@ class Models
      * Get an instance of the role model.
      *
      * @param  array  $attributes
-     * @return \Silber\Bouncer\Database\Role
+     * @return \Dubroquin\Bouncer\Database\Role
      */
     public static function role(array $attributes = [])
     {

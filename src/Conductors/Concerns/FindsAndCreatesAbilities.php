@@ -1,9 +1,9 @@
 <?php
 
-namespace Silber\Bouncer\Conductors\Concerns;
+namespace Dubroquin\Bouncer\Conductors\Concerns;
 
-use Silber\Bouncer\Helpers;
-use Silber\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Helpers;
+use Dubroquin\Bouncer\Database\Models;
 
 use InvalidArgumentException;
 use Illuminate\Support\Collection;
@@ -80,7 +80,7 @@ trait FindsAndCreatesAbilities
      * @param  string  $ability
      * @param  \Illuminate\Database\Eloquent\Model|string  $entity
      * @param  array  $attributes
-     * @return \Silber\Bouncer\Database\Ability
+     * @return \Dubroquin\Bouncer\Database\Ability
      */
     protected function getModelAbility($ability, $entity, array $attributes)
     {
@@ -97,7 +97,7 @@ trait FindsAndCreatesAbilities
      * @param  string  $ability
      * @param  \Illuminate\Database\Eloquent\Model|string  $entity
      * @param  array  $attributes
-     * @return \Silber\Bouncer\Database\Ability|null
+     * @return \Dubroquin\Bouncer\Database\Ability|null
      */
     protected function findAbility($ability, $entity, $attributes)
     {
@@ -116,7 +116,7 @@ trait FindsAndCreatesAbilities
      * @param  string  $ability
      * @param  \Illuminate\Database\Eloquent\Model|string  $entity
      * @param  array  $attributes
-     * @return \Silber\Bouncer\Database\Ability
+     * @return \Dubroquin\Bouncer\Database\Ability
      */
     protected function createAbility($ability, $entity, $attributes)
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Silber\Bouncer\Database\Queries;
+namespace Dubroquin\Bouncer\Database\Queries;
 
-use Silber\Bouncer\Helpers;
-use Silber\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Helpers;
+use Dubroquin\Bouncer\Database\Models;
 
 class Roles
 {

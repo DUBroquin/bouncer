@@ -1,7 +1,7 @@
 <?php
 
-use Silber\Bouncer\Database\Role;
-use Silber\Bouncer\Database\Ability;
+use Dubroquin\Bouncer\Database\Role;
+use Dubroquin\Bouncer\Database\Ability;
 
 class WildcardsTest extends BaseTestCase
 {

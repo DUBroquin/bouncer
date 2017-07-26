@@ -1,10 +1,10 @@
 <?php
 
-namespace Silber\Bouncer;
+namespace Dubroquin\Bouncer;
 
-use Silber\Bouncer\Database\Models;
-use Silber\Bouncer\Contracts\Clipboard as ClipboardContract;
-use Silber\Bouncer\Database\Queries\Abilities as AbilitiesQuery;
+use Dubroquin\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Contracts\Clipboard as ClipboardContract;
+use Dubroquin\Bouncer\Database\Queries\Abilities as AbilitiesQuery;
 
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;

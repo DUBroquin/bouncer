@@ -1,6 +1,6 @@
 <?php
 
-namespace Silber\Bouncer\Contracts;
+namespace Dubroquin\Bouncer\Contracts;
 
 use Illuminate\Contracts\Cache\Store;
 use Illuminate\Database\Eloquent\Model;

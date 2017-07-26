@@ -1,6 +1,6 @@
 <?php
 
-namespace Silber\Bouncer\Seed;
+namespace Dubroquin\Bouncer\Seed;
 
 use Closure;
 use Illuminate\Container\Container;

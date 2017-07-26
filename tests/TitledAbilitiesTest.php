@@ -1,6 +1,6 @@
 <?php
 
-use Silber\Bouncer\Database\Ability;
+use Dubroquin\Bouncer\Database\Ability;
 
 class TitledAbilitiesTest extends BaseTestCase
 {

@@ -1,8 +1,8 @@
 <?php
 
-use Silber\Bouncer\Database\Role;
-use Silber\Bouncer\Database\Models;
-use Silber\Bouncer\Database\Ability;
+use Dubroquin\Bouncer\Database\Role;
+use Dubroquin\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Database\Ability;
 
 class OwnershipTest extends BaseTestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-use Silber\Bouncer\Database\Role;
+use Dubroquin\Bouncer\Database\Role;
 
 class AuthorizableTest extends BaseTestCase
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Silber\Bouncer\Database\Concerns;
+namespace Dubroquin\Bouncer\Database\Concerns;
 
 use Illuminate\Container\Container;
 
-use Silber\Bouncer\Clipboard;
-use Silber\Bouncer\Database\Models;
-use Silber\Bouncer\Database\Ability;
-use Silber\Bouncer\Conductors\GivesAbilities;
-use Silber\Bouncer\Conductors\ForbidsAbilities;
-use Silber\Bouncer\Conductors\RemovesAbilities;
-use Silber\Bouncer\Conductors\UnforbidsAbilities;
+use Dubroquin\Bouncer\Clipboard;
+use Dubroquin\Bouncer\Database\Models;
+use Dubroquin\Bouncer\Database\Ability;
+use Dubroquin\Bouncer\Conductors\GivesAbilities;
+use Dubroquin\Bouncer\Conductors\ForbidsAbilities;
+use Dubroquin\Bouncer\Conductors\RemovesAbilities;
+use Dubroquin\Bouncer\Conductors\UnforbidsAbilities;
 
 trait HasAbilities
 {
@@ -53,7 +53,7 @@ trait HasAbilities
      *
      * @param  mixed  $ability
      * @param  mixed|null  $model
-     * @return \Silber\Bouncer\Conductors\GivesAbilities|$this
+     * @return \Dubroquin\Bouncer\Conductors\GivesAbilities|$this
      */
     public function allow($ability = null, $model = null)
     {
@@ -71,7 +71,7 @@ trait HasAbilities
      *
      * @param  mixed  $ability
      * @param  mixed|null  $model
-     * @return \Silber\Bouncer\Conductors\RemovesAbilities|$this
+     * @return \Dubroquin\Bouncer\Conductors\RemovesAbilities|$this
      */
     public function disallow($ability = null, $model = null)
     {
@@ -89,7 +89,7 @@ trait HasAbilities
      *
      * @param  mixed  $ability
      * @param  mixed|null  $model
-     * @return \Silber\Bouncer\Conductors\ForbidsAbilities|$this
+     * @return \Dubroquin\Bouncer\Conductors\ForbidsAbilities|$this
      */
     public function forbid($ability = null, $model = null)
     {
@@ -107,7 +107,7 @@ trait HasAbilities
      *
      * @param  mixed  $ability
      * @param  mixed|null  $model
-     * @return \Silber\Bouncer\Conductors\UnforbidsAbilities|$this
+     * @return \Dubroquin\Bouncer\Conductors\UnforbidsAbilities|$this
      */
     public function unforbid($ability = null, $model = null)
     {
@@ -123,7 +123,7 @@ trait HasAbilities
     /**
      * Get an instance of the bouncer's clipboard.
      *
-     * @return \Silber\Bouncer\Clipboard
+     * @return \Dubroquin\Bouncer\Clipboard
      */
     protected function getClipboardInstance()
     {
