@@ -33,4 +33,8 @@ class Role extends Model
 
         parent::__construct($attributes);
     }
+
+     public function notification_types(){
+        return $this->belongsToMany(NotificationType::class)->withTimestamps();
+    }
 }

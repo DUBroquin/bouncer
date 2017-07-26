@@ -1,6 +1,6 @@
 {
-    "name": "silber/bouncer",
-    "description": "Bouncer handles roles and abilities for Eloquent models.",
+    "name": "dubroquin/bouncer",
+    "description": "Fork of silber/bouncer",
     "keywords": [
         "abilities",
         "acl",
@@ -15,11 +15,15 @@
         {
             "name": "Joseph Silber",
             "email": "contact@josephsilber.com"
+        },
+        {
+            "name": "Donovan Broquin",
+            "email": "dbroquin@deliverup.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Silber\\Bouncer\\": "src/"
+            "Dubroquin\\Bouncer\\": "src/"
         }
     },
     "autoload-dev": {
@@ -47,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Silber\\Bouncer\\BouncerServiceProvider"
+                "Dubroquin\\Bouncer\\BouncerServiceProvider"
             ],
             "aliases": {
-                "Bouncer": "Silber\\Bouncer\\BouncerFacade"
+                "Bouncer": "Dubroquin\\Bouncer\\BouncerFacade"
             }
         }
     }
