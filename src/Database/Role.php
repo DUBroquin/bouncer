@@ -39,7 +39,7 @@ class Role extends Model
         return $this->belongsToMany(NotificationType::class)->withTimestamps();
     }
 
-    public function roles(){
+    public function groups(){
         return $this->hasMany(Group::class);
     }
 }
