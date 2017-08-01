@@ -148,50 +148,6 @@ class BouncerServiceProvider extends ServiceProvider
     }
 
     /**
-     * Publish the package's Role model.
-     *
-     * @return void
-     */
-    protected function publishRole()
-    {
-        if (class_exists('CreateBouncerTables')) {
-            return;
-        }
-
-        $timestamp = date('Y_m_d_His', time());
-
-        $stub = __DIR__.'/../migrations/create_bouncer_tables.php';
-
-        $target = $this->app->databasePath().'/migrations/'.$timestamp.'_create_bouncer_tables.php';
-
-        $this->publishes([
-            __DIR__.'/Database/Role.php' => app_path()
-        ]);
-    }
-
-    /**
-     * Publish the package's Group model.
-     *
-     * @return void
-     */
-    protected function publishGroup()
-    {
-        if (class_exists('CreateBouncerTables')) {
-            return;
-        }
-
-        $timestamp = date('Y_m_d_His', time());
-
-        $stub = __DIR__.'/../migrations/create_groupe_tables.php';
-
-        $target = $this->app->databasePath().'/migrations/'.$timestamp.'_create_bouncer_tables.php';
-
-        $this->publishes([
-            __DIR__.'/Database/Role.php' => app_path()
-        ]);
-    }
-
-    /**
      * Register the bouncer's clipboard at the gate.
      *
      * @return void

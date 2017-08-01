@@ -37,6 +37,15 @@ class CreateBouncerTables extends Migration
             $table->timestamps();
         });
 
+        Schema::create(Models::table('groups'), function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name', 150);
+            $table->integer('role_id')->unsigned();
+            $table->timestamps();
+
+            $table->foreign('role_id')->references('id')->on('roles');
+        });
+
         Schema::create(Models::table('assigned_roles'), function (Blueprint $table) {
             $table->integer('role_id')->unsigned()->index();
             $table->morphs('entity');
