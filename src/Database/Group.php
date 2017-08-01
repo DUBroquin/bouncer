@@ -5,7 +5,7 @@ namespace Dubroquin\Bouncer\Database;
 use Illuminate\Database\Eloquent\Model;
 use Pegasus\NotificationType;
 
-class Groups extends Model
+class Group extends Model
 {
     use Concerns\IsRole;
 
