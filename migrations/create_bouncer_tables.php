@@ -74,6 +74,7 @@ class CreateBouncerTables extends Migration
         Schema::drop(Models::table('permissions'));
         Schema::drop(Models::table('assigned_roles'));
         Schema::drop(Models::table('roles'));
+        Schema::drop(Models::table('groups'));
         Schema::drop(Models::table('abilities'));
     }
 }
