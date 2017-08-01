@@ -5,7 +5,7 @@ namespace Dubroquin\Bouncer\Database;
 use Illuminate\Database\Eloquent\Model;
 use Pegasus\NotificationType;
 
-class Role extends Model
+class Groups extends Model
 {
     use Concerns\IsRole;
 
@@ -30,16 +30,12 @@ class Role extends Model
      */
     public function __construct(array $attributes = [])
     {
-        $this->table = Models::table('roles');
+        $this->table = Models::table('groups');
 
         parent::__construct($attributes);
     }
 
-     public function notification_types(){
-        return $this->belongsToMany(NotificationType::class)->withTimestamps();
-    }
-
     public function roles(){
-        return $this->hasMany(Group::class);
+        return $this->belongsTo(Role::class);
     }
 }
